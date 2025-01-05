@@ -8,7 +8,7 @@ import (
 )
 
 func RetryStrategy() *retry.ExponentialStrategy {
-	return &retry.ExponentialStrategy{Min: 1000, Max: 20_000, MaxJitter: 250}
+	return &retry.ExponentialStrategy{Min: 1000, Max: 20_000, MaxJitter: 240}
 }
 
 type ClientConfig struct {
